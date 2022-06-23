@@ -11,7 +11,8 @@ Pod::Spec.new do |s|
     s.platform     = :ios, "9.0"
     s.source       = { :git => "https://github.com/author/RNYamap.git", :tag => "master" }
     s.source_files = "ios/**/*.{h,m}"
-    s.pod_target_xcconfig = { 'ENABLE_BITCODE' => 'NO' }
+    s.user_target_xcconfig = { 'EXCLUDED_ARCHS[sdk=iphonesimulator*]' => 'arm64' }
+    s.pod_target_xcconfig = { 'EXCLUDED_ARCHS[sdk=iphonesimulator*]' => 'arm64' }
     # s.requires_arc = true
 
     s.dependency "React"
