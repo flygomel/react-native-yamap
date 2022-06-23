@@ -8,7 +8,7 @@ Pod::Spec.new do |s|
     s.homepage     = "vvdev.ru"
     s.license      = "MIT"
     s.author       = { package["author"]["name"] => package["author"]["email"] }
-    s.platform     = :ios, "9.0"
+    s.platform     = :ios, "12.0"
     s.source       = { :git => "https://github.com/author/RNYamap.git", :tag => "master" }
     s.source_files = "ios/**/*.{h,m}"
     s.user_target_xcconfig = { 'EXCLUDED_ARCHS[sdk=iphonesimulator*]' => 'arm64' }
